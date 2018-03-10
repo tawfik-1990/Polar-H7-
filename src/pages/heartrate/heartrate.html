@@ -1,0 +1,27 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>heartrate</ion-title>
+       <img src="assets/imgs/hrw.png" class="hrwicon"> 
+  </ion-navbar>
+    <div>
+      <img src="assets/imgs/health.jpg" >
+    </div>
+</ion-header>
+
+
+    
+<ion-content padding>
+
+<h2 (click)="openInfo()">Info</h2>
+			<lottie-animation-view
+                    [options]="lottieConfig"
+                    [width]="450"
+                    [height]="250"
+                    (animCreated)="handleAnimation($event)">
+              </lottie-animation-view>
+<h1>{{ heartRate.heartrate  }} bpm</h1>
+
+
+</ion-content>
